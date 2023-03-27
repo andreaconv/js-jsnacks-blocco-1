@@ -7,20 +7,16 @@ se è dispari inseriscilo nell’array
 
 const array = [];
 
-const numeroInserito = parseInt(prompt("inserisci un numero"));
+// come faccio a far ripetere 6 volte il prompt e salvarmi i numeri inseriti?
 
 for (let i = 0; i < 6; i++){
   
-  // come faccio a far ripetere 6 volte il prompt e salvarmi i numeri inseriti?
-
-  if ((numeroInserito % 2)){
+  const numeroInserito = parseInt(prompt("inserisci un numero"));
+  
+  if (numeroInserito % 2){
     array.push(numeroInserito);
-  }else {
-    console.log("il tuo numero è pari")
   }
-
+  
 }
 
-
 console.log(array);
-
